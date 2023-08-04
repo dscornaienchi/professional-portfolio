@@ -2,56 +2,51 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Welcome to my developer portfolio readme. I'm thrilled to have you here and to share my previous work and experiences with you. This readme will guide you through the various sections of my portfolio, ensuring you can navigate and explore with ease. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+* About Me: As you explore, you'll notice that I've showcased my name along with a recent photo or avatar, allowing you to put a face to the work. The navigation menu provides links to different sections: "About Me", "My Work", and "Contact Me".
+* Navigation Links: Feel free to click on any of these links. The UI will smoothly scroll to the corresponding section, providing a seamless experience.
+* About Me Section: I've dedicated a section to share insights about my journey, skills, and background. This should give you a sense of who I am beyond just my work.
+* My Work: Here's where you'll get to see what I've been up to. Clicking on the "My Work" link will take you to a gallery of titled images, each representing a different application I've worked on. The first image is intentionally larger to catch your eye.
+* Interactive Applications: Excitingly, you can click on any application image to directly explore the deployed version of that application. This hands-on experience allows you to interact and understand my work better.
+* Responsive Design: I've designed my portfolio with responsiveness in mind. No matter the device or screen size you're using, the layout will adapt to ensure you have a pleasant journey exploring my work.
 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
+
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+
 WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
+
 WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
+
 WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
+
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
+
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Usage
 
 The website can be found at the URL here: 
 
-The webiste should look like the screenshot shown below 
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
+The website should look like the screenshot shown below:
+    
     ```md
     ![alt text](assets/images/screenshot.png)
     ```
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Some of the assets used on this website are provided by the following 3rd parties: 
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Tutorials and instruction provided by the University of Texas at Austin Full Stack Web Developement Program. Information about this program can be found here: 
 
 ## Features
 
-If your project has a lot of features, list them here.
+Features include: 
+* bullet 1
+* bullet 2 
