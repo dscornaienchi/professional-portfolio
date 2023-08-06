@@ -10,23 +10,43 @@ body {
 
 .header {
     padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: blue;
-    color: darkmagenta;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    background-color:peachpuff;
+    color: slateblue;
     font-size: 20px;
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    position: relative;
+    left: 100px;
 }
-/* Photo underneath header */
+
+.header ul li {
+    display: inline-block;
+    margin-left: 25px;
+    float: right;
+    position: relative;
+    bottom: 40px;
+    right: 100px;
+}
 
 .hero {
-    height: 200px;
-    width: 50%;
+    height: 300px;
+    width: 100%;
     margin-bottom: 10px;
-    background-image: url("");
+    background-image: url("/professional-portfolio/assets/images/lo-fi.jpg");
     background-size: cover;
     background-position: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+.hero h1 {
+    font-size: 46px;
+    position: relative;
+    left: 1100px;
+    top: 200px;
+    color: slateblue;
+
 }
