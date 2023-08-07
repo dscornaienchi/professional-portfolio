@@ -85,6 +85,11 @@ p {
     bottom: 175px;
   }
 
+  .button:hover {
+    background-color: gray;
+    color: peachpuff;
+  }
+
   .articles {
     display: flex;
     flex-direction: column;
@@ -98,6 +103,7 @@ p {
     float: left;
     margin-left: 100px;
     font-size: 46px;
+    margin-right: 100px;
   }
 
   .article-1 p {
@@ -109,9 +115,32 @@ p {
     right: 100px;
   }
 
+  .article-2 img {
+    margin: 50px;
+    border: white 5px solid;
+  }
+
+  .article-2 img:hover{
+    border-color:greenyellow;
+    filter: brightness(150%);
+  }
+
+  .article-2 a {
+    font-size: 25px;
+  }
+
+  .article-2 a:hover{
+    color:greenyellow;
+  }
+
   .primary-project {
-    height: 600px;
-    width: 700px;
+    height: 800px;
+    width: 900px;
+  }
+
+  .secondary-project img {
+    display: flex;
+    justify-content: center;
   }
 
 .article-3 ul {
@@ -121,9 +150,14 @@ p {
 }
 
   .article-3 ul li {
-    margin-left: 80px;
-    font-size: 20px;
+    margin-left: 100px;
+    font-size: 25px;
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 0.5em;
+    margin-bottom: 100px;
+  }
+
+  .article-3 a:hover {
+    font-weight: bolder;
   }
