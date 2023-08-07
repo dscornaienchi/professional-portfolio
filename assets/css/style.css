@@ -52,7 +52,7 @@ p {
 .hero p {
     color: white;
     margin-left: 800px;
-    margin-right: 100px;
+    margin-right: 150px;
     position: relative;
     bottom: 200px;
     right: 125px;
@@ -91,9 +91,6 @@ p {
   }
 
   .articles {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 20px;
@@ -109,10 +106,11 @@ p {
   .article-1 p {
     float: right;
     margin-left: 450px;
+    margin-right: 200px;
     margin-bottom: 20px;
     position: relative;
     bottom: 40px;
-    right: 100px;
+    right: 10px;
   }
 
   .article-2 img {
@@ -138,12 +136,13 @@ p {
     width: 900px;
   }
 
-  .secondary-project img {
-    display: flex;
-    justify-content: center;
+  .secondary-project {
+    margin-left: 100px;
+    position: relative;
+    left: 150px;
   }
 
-.article-3 ul {
+  .article-3 ul {
     display: flex;
     list-style: none;
     padding:0;
