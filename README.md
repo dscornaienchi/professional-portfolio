@@ -37,6 +37,8 @@ The website should look like the screenshot shown below:
 It is your responsibility to include a note in the README section of your repo specifying code source and its location within your repo
 
 Some of the assets used on this website are provided by the following 3rd parties: 
+* background image: https://unsplash.com/photos/iEKg9h5_hd4
+* Hero background image: https://wallpapers.com/lo-fi
 
 Tutorials and instruction provided by the University of Texas at Austin Full Stack Web Developement Program. Information about this program can be found here: 
 
