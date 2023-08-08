@@ -59,12 +59,13 @@ p {
 }
 
 .hero img {
+    height: 400px;
+    width: 460px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px 10px 10px 10px;
     position: relative;
     left: 100px;
     top: 150px;
-    height: 400px;
-    width: 490px;
-    border-radius: 8px;
 }
 
 .button {
@@ -103,7 +104,7 @@ p {
     margin-right: 100px;
   }
 
-  .article-1 p {
+  #About p {
     float: right;
     margin-left: 450px;
     margin-right: 200px;
@@ -113,42 +114,67 @@ p {
     right: 10px;
   }
 
-  .article-2 img {
+  #Portfolio img {
     margin: 50px;
     border: white 5px solid;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 10px 10px 10px 10px;
   }
 
-  .article-2 img:hover{
+  #Portfolio img:hover{
     border-color:greenyellow;
     filter: brightness(150%);
   }
 
-  .article-2 a {
+  #Portfolio a {
     font-size: 25px;
   }
 
-  .article-2 a:hover{
+  #Portfolio a:hover{
     color:greenyellow;
   }
 
-  .primary-project {
+  .primary-image {
     height: 800px;
     width: 900px;
   }
 
-  .secondary-project {
-    margin-left: 100px;
+  .primary-project-name {
+    position:relative;
+    bottom: 150px;
+    right: 925px;
+  }
+
+  .primary-project-type {
     position: relative;
+    bottom: 100px;
+    right: 1150px;
+  }
+
+  .secondary-project-name {
+    position: relative;
+    bottom: 120px;
+    right: 550px;
+  }
+
+  .secondary-project-type {
+    position: relative;
+    bottom: 80px;
+    right: 705px;
+  }
+
+  .secondary-image {
+    margin-left: 100px;
     left: 150px;
   }
 
-  .article-3 ul {
+  #Contact ul {
     display: flex;
     list-style: none;
     padding:0;
 }
 
-  .article-3 ul li {
+  #Contact ul li {
     margin-left: 100px;
     font-size: 25px;
     text-decoration: underline;
@@ -157,6 +183,107 @@ p {
     margin-bottom: 100px;
   }
 
-  .article-3 a:hover {
+  #Contact a:hover {
     font-weight: bolder;
   }
+
+
+@media screen and (max-width: 992px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    Padding: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .hero h1,
+  .hero h2,
+  .hero p {
+    margin: 10px 0; /* Adjust margin for spacing */
+  }
+
+  .button {
+    position: static;
+    margin: 10px auto; /* Center-align the buttons */
+    left: auto;
+    bottom: auto;
+  }
+
+  .hero img {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    max-width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    Padding: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .hero h1,
+  .hero h2,
+  .hero p {
+    margin: 10px 0; /* Adjust margin for spacing */
+  }
+
+  .button {
+    position: static;
+    margin: 10px auto; /* Center-align the buttons */
+    left: auto;
+    bottom: auto;
+  }
+
+  .hero img {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    max-width: auto;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    Padding: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .hero h1,
+  .hero h2,
+  .hero p {
+    margin: 10px 0; /* Adjust margin for spacing */
+  }
+
+  .button {
+    position: static;
+    margin: 10px auto; /* Center-align the buttons */
+    left: auto;
+    bottom: auto;
+  }
+
+  .hero img {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    max-width: auto;
+  }
+}
