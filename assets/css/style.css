@@ -2,11 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
 
 body {
     background-image: url("/professional-portfolio/assets/images/hans-isaacson-iEKg9h5_hd4-unsplash.jpg");
-    background-repeat: no-repeat;
     background-size: auto;
     filter:brightness(80%);
     font-family:sans-serif;
@@ -39,10 +39,8 @@ nav {
 }
 
 .hero-content {
-  padding-left: 20px;
+  padding-left: 60px;
 }
-
-
 
 .hero h1 {
     font-size: 60px;
@@ -50,7 +48,7 @@ nav {
     color:white;
     text-align: center;
     display: flex;
-    margin: 12px 0;
+    margin: 15px 0;
 }
 
 .hero h2 {
@@ -62,8 +60,6 @@ nav {
 
 .hero p {
     color: white;
-    /* margin-left: 645px;
-    margin-top: -400px; */
     max-width: 700px;
 }
 
@@ -72,11 +68,10 @@ nav {
     width: 460px;
     box-shadow: 0px 0px 10px black;
     border-radius: 10px 10px 10px 10px;
-    /* margin: 90px; */
 }
 
 .nav-btns {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .button {
@@ -93,10 +88,6 @@ nav {
     transition: background-color 0.3s;
     position: relative;
     display: inline-block;
-    /* left: 630px; */
-    /* bottom: 275px; */
-    /* justify-content: center; */
-    /* align-content: center; */
   }
 
   .button:hover {
@@ -105,19 +96,12 @@ nav {
   }
 
   .articles {
-    /* margin-top: 50px; */
-    /* margin-bottom: 50px;
-    margin-right: 20px; */
-
     max-width: 1280px;
     margin: 50px auto;
   }
 
   .articles h2 {
-    /* float: left; */
-    /* margin-left: 100px; */
     font-size: 46px;
-    /* margin-right: 100px; */
   }
 
   #About {
@@ -125,18 +109,20 @@ nav {
   }
 
   #About p {
-    /* float: right; */
-    /* margin-left: 450px;
-    margin-right: 200px;
-    margin-bottom: 20px; */
+    margin-top: 20px;
+    margin-left: 100px;
   }
 
   #Portfolio {
     display: flex;
-
   }
 
   #Portfolio h2, #About h2 {
+    min-width: 20%;
+    max-width: 20%;
+  }
+
+  #Contact h2 {
     min-width: 20%;
     max-width: 20%;
   }
@@ -202,37 +188,61 @@ nav {
     text-align: center;
     margin: 20px;
     max-width: 100%;
+    margin-left: 100px;
 }
 
 .secondary-projects a, .primary-project a {
   position: relative;
 }
 
-
-.secondary-project-name {
+#Contact ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin-left: 250px;
+  margin-top: -65px; /* Add a negative margin-top to move the ul up */
 }
 
-  #Contact ul {
-    display: flex;
-    list-style: none;
-    padding:0;
+#Contact ul li {
+  margin-left: 75px;
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 0.5em;
+  margin-bottom: 50px; /* Reduce the margin-bottom to adjust spacing */
 }
-
-  #Contact ul li {
-    margin-left: 100px;
-    font-size: 25px;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 0.5em;
-    margin-bottom: 100px;
-  }
 
   #Contact a:hover {
     font-weight: bolder;
   }
 
+
+/* Lines for larger screens */
+.articles h2.article-heading {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px; /* Adjust the spacing between h2 and lines */
+}
+
+.articles h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px; /* Adjust this value based on your layout */
+  height: 100%;
+  width: 2px; /* Adjust the width of the line */
+  background-color: white; /* Change the line color as needed */
+}
+
+.articles h2:last-child::after {
+  display: none; /* Hide the line after the last h2 element */
+}
+
+/* MEDIA QUERIES BEGIN HERE */
+
+
   @media screen and (max-width: 1200px) {
-/* @media screen and (max-width: 992px) { */
   .NYC-Times {
     display: flex;
     flex-direction: column;
@@ -248,6 +258,16 @@ nav {
   .hero h2,
   .hero p {
     margin: 10px 0; /* Adjust margin for spacing */
+  }
+
+  .hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center; /* Center-align the h1 element */
+    display: flex;
+    margin: 15px 0;
+    margin-left: 75px;
   }
 
   .hero p {
@@ -270,88 +290,36 @@ nav {
     max-width: auto;
     margin-bottom: 0px;
     margin-top: 30px;
+    margin-left: 60px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .NYC-Times {
+  .primary-image {
+    height: 400px;
+    width: 500px;
+  }
+
+  .secondary-image {
+    height: 150px;
+    width: 200px;
+  }
+
+  #About h2, #Portfolio h2 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     justify-content: center;
-    height: auto;
-    Padding: 20px;
-    background-repeat: no-repeat;
   }
 
-  .hero h1,
-  .hero h2,
-  .hero p {
-    margin: 10px 0; /* Adjust margin for spacing */
+  .project-details {
+    font-size: 14px;
   }
 
-  .hero p {
-    margin-bottom: 50px;
-    font: 14px;
-  }
-
-  .button {
-    position: static;
-    margin: 10px; /* Center-align the buttons */
-    left: auto;
-    bottom: auto;
-  }
-
-  .hero img {
-    position: static;
-    top: auto;
-    left: auto;
-    width: auto;
-    max-width: auto;
-    margin-bottom: 0px;
-    margin-top: 30px;
-  }
-}
-
-
-@media screen and (max-width: 576px) {
-  .NYC-Times {
+  #Contact h2 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     justify-content: center;
-    height: auto;
-    Padding: 20px;
-    background-repeat: no-repeat;
   }
 
-  .hero h1,
-  .hero h2,
-  .hero p {
-    margin: 10px 0; /* Adjust margin for spacing */
-  }
-
-  .hero p {
-    margin-bottom: 50px;
-    font: 14px;
-  }
-
-  .button {
-    position: static;
-    margin: 10px; /* Center-align the buttons */
-    left: auto;
-    bottom: auto;
-  }
-
-  .hero img {
-    position: static;
-    top: auto;
-    left: auto;
-    width: auto;
-    max-width: auto;
-    margin-bottom: 0px;
-    margin-top: 30px;
+  .articles h2::after,
+  .port-content::after,
+  #Contact ul::after {
+    display: none; /* Hide the lines for smaller screens */
   }
 }
