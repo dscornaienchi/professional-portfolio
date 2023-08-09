@@ -11,8 +11,6 @@ Welcome to my developer portfolio readme. I'm thrilled to share my previous work
 * Interactive Applications: Excitingly, you can click on any application image to directly explore the deployed version of that application. This hands-on experience allows you to interact and understand my work better.
 * Responsive Design: I've designed my portfolio with responsiveness in mind. No matter the device or screen size you're using, the layout will adapt to ensure you have a pleasant journey exploring my work.
 
-WHEN I resize the page or view the site on various screens and devices. THEN I am presented with a responsive layout that adapts to my viewport
-
 ## Usage
 
 The website can be found at the URL here: 

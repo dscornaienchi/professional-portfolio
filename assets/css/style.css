@@ -37,23 +37,22 @@ nav {
     color:white;
     text-align: center;
     display: flex;
-    margin-left: 625px;
-    margin-top: -480px;
+    margin-top: 100px;
 }
 
 .hero h2 {
     font-size: 30px;
     font-weight: lighter;
     color: white;
-    margin-left: 625px;
+    margin-left: 645px;
     margin-top: -425px;
 }
 
 .hero p {
     color: white;
-    margin-left: 625px;
-    margin-right: 150px;
+    margin-left: 645px;
     margin-top: -400px;
+    max-width: 800px;
 }
 
 .hero img {
@@ -62,10 +61,6 @@ nav {
     box-shadow: 0px 0px 10px black;
     border-radius: 10px 10px 10px 10px;
     margin: 90px;
-}
-
-.button-container {
-/*MOVE YOUR TOP / BOTTOM MARGINS HERE?*/
 }
 
 .button {
@@ -81,7 +76,7 @@ nav {
     text-decoration: none;
     transition: background-color 0.3s;
     position: relative;
-    left: 625px;
+    left: 630px;
     bottom: 275px;
     justify-content: center;
     align-content: center;
@@ -110,9 +105,6 @@ nav {
     margin-left: 450px;
     margin-right: 200px;
     margin-bottom: 20px;
-    /*position: relative;
-    bottom: 40px;
-    right: 10px;*/
   }
 
   #Portfolio img {
@@ -137,37 +129,29 @@ nav {
 
   .primary-image {
     height: 800px;
-    width: 900px;
+    width: 1100px;
   }
 
-  /*.primary-project-name {
-    position:relative;
-    bottom: 150px;
-    right: 925px;
+  .primary-project {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
   }
-
-  .primary-project-type {
-    position: relative;
-    bottom: 100px;
-    right: 1150px;
-  }
-
-  .secondary-project-name {
-    position: relative;
-    bottom: 120px;
-    right: 550px;
-  }
-
-  .secondary-project-type {
-    position: relative;
-    bottom: 80px;
-    right: 705px;
-  }*/
 
   .secondary-image {
-    margin-left: 100px;
-    left: 150px;
+    height: 300px;
+    width: 400px;
   }
+
+  .secondary-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px; /* Adjust spacing between secondary images */
+}
 
   #Contact ul {
     display: flex;
