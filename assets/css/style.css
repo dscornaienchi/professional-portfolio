@@ -24,12 +24,25 @@ p {
     letter-spacing: 1px;
 }
 
-nav {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/professional-portfolio/assets/images/lo-fi.jpg");
-  height: 750px;
+.NYC-Times {
+  max-width: 1280px;
+  margin:auto;
   display: flex;
   flex-wrap: wrap;
 }
+
+nav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/professional-portfolio/assets/images/lo-fi.jpg");
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  padding-left: 20px;
+}
+
+
 
 .hero h1 {
     font-size: 60px;
@@ -37,22 +50,21 @@ nav {
     color:white;
     text-align: center;
     display: flex;
-    margin-top: 100px;
+    margin: 12px 0;
 }
 
 .hero h2 {
     font-size: 30px;
     font-weight: lighter;
     color: white;
-    margin-left: 645px;
-    margin-top: -425px;
+    margin: 20px 0;
 }
 
 .hero p {
     color: white;
-    margin-left: 645px;
-    margin-top: -400px;
-    max-width: 800px;
+    /* margin-left: 645px;
+    margin-top: -400px; */
+    max-width: 700px;
 }
 
 .hero img {
@@ -60,7 +72,11 @@ nav {
     width: 460px;
     box-shadow: 0px 0px 10px black;
     border-radius: 10px 10px 10px 10px;
-    margin: 90px;
+    /* margin: 90px; */
+}
+
+.nav-btns {
+  margin: 20px 0;
 }
 
 .button {
@@ -76,10 +92,11 @@ nav {
     text-decoration: none;
     transition: background-color 0.3s;
     position: relative;
-    left: 630px;
-    bottom: 275px;
-    justify-content: center;
-    align-content: center;
+    display: inline-block;
+    /* left: 630px; */
+    /* bottom: 275px; */
+    /* justify-content: center; */
+    /* align-content: center; */
   }
 
   .button:hover {
@@ -88,23 +105,40 @@ nav {
   }
 
   .articles {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 20px;
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px;
+    margin-right: 20px; */
+
+    max-width: 1280px;
+    margin: 50px auto;
   }
 
   .articles h2 {
-    float: left;
-    margin-left: 100px;
+    /* float: left; */
+    /* margin-left: 100px; */
     font-size: 46px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
+  }
+
+  #About {
+    display: flex;
   }
 
   #About p {
-    float: right;
-    margin-left: 450px;
+    /* float: right; */
+    /* margin-left: 450px;
     margin-right: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
+  }
+
+  #Portfolio {
+    display: flex;
+
+  }
+
+  #Portfolio h2, #About h2 {
+    min-width: 20%;
+    max-width: 20%;
   }
 
   #Portfolio img {
@@ -123,13 +157,12 @@ nav {
     font-size: 25px;
   }
 
-  #Portfolio a:hover{
+  #Portfolio .primary-project :hover{
     color:greenyellow;
   }
 
-  .primary-image {
-    height: 800px;
-    width: 1100px;
+  #Portfolio .secondary-projects :hover{
+    color:greenyellow;
   }
 
   .primary-project {
@@ -140,17 +173,43 @@ nav {
     margin: 20px;
   }
 
+  .primary-image {
+    height: 600px;
+    width: 800px;
+  }
+
+  .project-details {
+    display: block;
+    position: absolute;
+    background-color: peachpuff;
+    padding: 6px;
+    left: 55px;
+    bottom: 65px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .secondary-image {
-    height: 300px;
-    width: 400px;
+    height: 250px;
+    width: 300px;
   }
 
   .secondary-projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    margin: 20px; /* Adjust spacing between secondary images */
+    margin: 20px;
+    max-width: 100%;
+}
+
+.secondary-projects a, .primary-project a {
+  position: relative;
+}
+
+
+.secondary-project-name {
 }
 
   #Contact ul {
@@ -172,13 +231,14 @@ nav {
     font-weight: bolder;
   }
 
-
-@media screen and (max-width: 992px) {
-  .hero {
+  @media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 992px) { */
+  .NYC-Times {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     height: auto;
     Padding: 20px;
     background-repeat: no-repeat;
@@ -214,11 +274,12 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
+  .NYC-Times {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     height: auto;
     Padding: 20px;
     background-repeat: no-repeat;
@@ -255,11 +316,12 @@ nav {
 
 
 @media screen and (max-width: 576px) {
-  .hero {
+  .NYC-Times {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: center;
     height: auto;
     Padding: 20px;
     background-repeat: no-repeat;
