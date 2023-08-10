@@ -13,7 +13,7 @@ Welcome to my developer portfolio readme. I'm thrilled to share my previous work
 
 ## Usage
 
-The website can be found at the URL here: 
+The website can be found at the URL here: https://dscornaienchi.github.io/professional-portfolio 
 
 The website should look like the screenshot shown below:
 
